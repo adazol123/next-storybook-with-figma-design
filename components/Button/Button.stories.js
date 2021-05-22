@@ -1,12 +1,12 @@
 
-import ButtonTest from './ButtonTest'
-import './buttonTest.css'
+import Button from './Button'
+import './button.css'
 import { withDesign } from 'storybook-addon-designs'
 
 
 export default {
-    title: 'ButtonTest',
-    component: ButtonTest,
+    title: 'Button',
+    component: Button,
     argTypes: {
       backgroundColor: { control: 'color' },
       color: { control: 'color'}
@@ -20,7 +20,7 @@ export default {
     }
   };
   
-  const Template = (args) => <ButtonTest {...args} />;
+  const Template = (args) => <Button {...args} />;
   
   export const Primary = Template.bind({});
   Primary.args = {

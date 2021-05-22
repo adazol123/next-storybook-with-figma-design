@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 
-export default function ButtonTest( { primary, backgroundColor, size, label, color, ...props }) {
+export default function Button( { primary, backgroundColor, size, label, color, ...props }) {
     const mode = primary ? 'storybook_button--primary' : 'storybook_button--secondary';
     return (
         <div>
@@ -16,7 +16,7 @@ export default function ButtonTest( { primary, backgroundColor, size, label, col
     )
 }
 
-ButtonTest.propTypes = {
+Button.propTypes = {
     /**
      * Is this the principal call to action on the page?
      */
@@ -39,7 +39,7 @@ ButtonTest.propTypes = {
     onClick: PropTypes.func,
 };
 
-ButtonTest.defaultProps = {
+Button.defaultProps = {
     backgroundColor: null,
     primary: true,
     size: 'small',

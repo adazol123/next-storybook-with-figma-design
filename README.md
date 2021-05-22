@@ -75,6 +75,8 @@ export default {
   };
 ```
 
+![/storybook-figma.png](storybook-figma)
+
 ### Contributors
 
 - Daniel Lozada
