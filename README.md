@@ -75,7 +75,7 @@ export default {
   };
 ```
 
-![/storybook-figma.png](storybook-figma)
+![storybook-figma](/public/storybook-figma.png)
 
 ### Contributors
 
