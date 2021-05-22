@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <a href="https://www.adazolhub.online">
+    <img src="https://firebasestorage.googleapis.com/v0/b/djlozada.appspot.com/o/Logo-main.svg?alt=media&token=b5f7bf96-1e5b-4e41-916e-c0d51e6c4dbf" height="128">
+    <h1 align="center">Adazolhub</h1>
+  </a>
+</p>
 
 ## Getting Started
 
@@ -12,23 +17,64 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Then, run the storybook:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+npm run storybook
+# or
+yarn storybook
+```
+Open [http://localhost:6006](http://localhost:6006) with your browser to see the result.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Use Next Js framework with Storybook for designing components in development environment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ with Figma Design integrated on Storybook
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Guide on installing the storybook and integrating Figma to Storybook
 
-## Deploy on Vercel
+Install storybook package
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npx -p @storybook/cli sb init
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Install storybook can be found in [https://storybook.js.org/addons](https://storybook.js.org/addons)
+
+```bash
+yarn add -D storybook-addon-designs
+```
+
+adding the code below under .storybook/main.js
+
+```bash
+  addons: [
+    'storybook-addon-designs'
+  ],
+```
+
+adding the parameters in storybook components (sample code below)
+
+```bash
+export default {
+    title: 'ButtonTest',
+    component: ButtonTest,
+    argTypes: {
+      backgroundColor: { control: 'color' },
+      color: { control: 'color'}
+    },
+    decorators: [withDesign],
+    parameters: {
+      design: {
+        type: 'figma',
+        url: 'https://www.figma.com/file/3FV5TRPuacbMyhSWjMtNd2/Blog-posts?node-id=29%3A22'
+     },
+    }
+  };
+```
+
+### Contributors
+
+- Daniel Lozada

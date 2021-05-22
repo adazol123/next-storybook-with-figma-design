@@ -1,9 +1,19 @@
+:root {
+  --color-secondary: #1ea7fd;
+  --color-success: #2DCC9E;
+  --color-light: #F8F8FF;
+  --color-dark: #181818;
+  --color-gray-100: #888888;
+  --color-gray-800: #323D50;
+  --color-gray-900: #191F29;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
 }
 
 a {
@@ -14,3 +24,4 @@ a {
 * {
   box-sizing: border-box;
 }
+
