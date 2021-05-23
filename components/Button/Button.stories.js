@@ -1,5 +1,5 @@
 
-import  { Button, _Button }  from './Button'
+import  { Button }  from './Button'
 import './button.css'
 import { withDesign } from 'storybook-addon-designs'
 
@@ -32,12 +32,6 @@ export default {
     }
   };
 
- const Template_01 = (args) => <_Button {...args}/>;
- export const Test = Template_01.bind({});
- Test.args = {
-    primary: true,
-    label: 'Solid',
- }
   
   const Template = (args) => <Button {...args} />;
   

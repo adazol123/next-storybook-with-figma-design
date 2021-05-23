@@ -14,13 +14,12 @@ export function Button( { primary, backgroundColor, size, label, color, ...props
     )
 }
 
-export function _Button( { label }) {
-    return (
-        <button>
-            { label }
-        </button>
-    )
-}
+
+
+
+
+
+
 
 Button.propTypes = {
     /**
