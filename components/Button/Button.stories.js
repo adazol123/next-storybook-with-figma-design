@@ -1,31 +1,50 @@
 
-import Button from './Button'
+import  { Button, _Button }  from './Button'
 import './button.css'
 import { withDesign } from 'storybook-addon-designs'
 
 
 export default {
-    title: 'Button',
+    title: 'Components/Button',
     component: Button,
     argTypes: {
       backgroundColor: { control: 'color' },
-      color: { control: 'color'}
+      color: { control: 'color'},
+      isActive: {
+        control: 'boolean',
+        options: [ 'true', 'false']
+      },
+      variant: {
+        control: {
+            type: 'select',
+            options: ['primary', 'secondary', 'primaryThemed', 'secondaryThemed']
+        }
+      },
     },
+
     decorators: [withDesign],
     parameters: {
       design: {
         type: 'figma',
         url: 'https://www.figma.com/file/3FV5TRPuacbMyhSWjMtNd2/Blog-posts?node-id=29%3A22'
      },
+
     }
   };
+
+ const Template_01 = (args) => <_Button {...args}/>;
+ export const Test = Template_01.bind({});
+ Test.args = {
+    primary: true,
+    label: 'Solid',
+ }
   
   const Template = (args) => <Button {...args} />;
   
   export const Primary = Template.bind({});
   Primary.args = {
     primary: true,
-    label: 'Button',
+    label: 'Solid',
   };
 
 // Primary.parameters = {
@@ -37,18 +56,18 @@ export default {
   
   export const Secondary = Template.bind({});
   Secondary.args = {
-    label: 'Button',
+    label: 'Outline',
     primary: false,
   };
   
   export const Large = Template.bind({});
   Large.args = {
-    size: 'large',
-    label: 'Button',
+    size: 'lg',
+    label: 'Large',
   };
   
   export const Small = Template.bind({});
   Small.args = {
-    size: 'small',
-    label: 'Button',
+    size: 'sm',
+    label: 'Small',
   };

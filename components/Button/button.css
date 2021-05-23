@@ -41,15 +41,18 @@
   background-color: transparent;
   box-shadow: rgba(78, 75, 75, 0.171) 0px 1px 5px 0px ;
 }
-.storybook_button--small {
+.storybook_button__sm {
   font-size: 0.8em;
   padding: 12px 24px;
 }
-.storybook_button--medium {
+.storybook_button__md {
   font-size: 1em;
   padding: 12px 24px;
 }
-.storybook_button--large {
+.storybook_button__lg {
   font-size: 1.2em;
   padding: 16px 32px;
 }
+
+
+

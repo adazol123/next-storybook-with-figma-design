@@ -1,18 +1,24 @@
 import PropTypes from 'prop-types';
 
 
-export default function Button( { primary, backgroundColor, size, label, color, ...props }) {
+export function Button( { primary, backgroundColor, size, label, color, ...props }) {
     const mode = primary ? 'storybook_button--primary' : 'storybook_button--secondary';
     return (
-        <div>
             <button 
             type="button"
-            className={['storybook_button', `storybook_button--${size}`, mode].join(' ')}
+            className={['storybook_button', `storybook_button__${size}`, mode].join(' ')}
             style={backgroundColor && { backgroundColor }}
             style={color && { color }}
             {...props}
             >{ label }</button>
-        </div>
+    )
+}
+
+export function _Button( { label }) {
+    return (
+        <button>
+            { label }
+        </button>
     )
 }
 
@@ -28,7 +34,7 @@ Button.propTypes = {
     /**
      * How large should the button be?
      */
-    size: PropTypes.oneOf(['small', 'medium', 'large']),
+    size: PropTypes.oneOf(['sm', 'md', 'lg']),
     /**
      * Button contents
      */
@@ -42,7 +48,7 @@ Button.propTypes = {
 Button.defaultProps = {
     backgroundColor: null,
     primary: true,
-    size: 'small',
+    size: 'md',
     onClick: undefined,
   };
 

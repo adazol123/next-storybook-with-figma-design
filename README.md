@@ -77,6 +77,10 @@ export default {
 
 ![storybook-figma](/public/storybook-figma.png)
 
+added card design | May 23, 2021
+
+![storybook-figma](/public/storybook-figma-card.png)
+
 ### Contributors
 
 - Daniel Lozada

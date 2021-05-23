@@ -1,0 +1,109 @@
+.card_container {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #fff;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 507px;
+    width: 386px;
+
+}
+
+.card_image {
+    height: 280px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card_layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 34px 32px;
+    height: 100%;
+}
+.card_copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: px 16px; */
+}
+.card_tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 16px;
+
+    height: 0.8em;
+    font-size: 10px;
+    line-height: 8px;
+    
+    color: #2e358f;
+    text-transform: capitalize;
+    font-weight: 600;
+
+    background: #A1D2F6;
+    border-radius: 100px;
+}
+.card_heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 8px;
+}
+.card_summary {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #454A4E;
+}
+
+.buttomInformation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.card_avatar {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.card_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 12px;
+    gap: 8px;
+}
+
+.card_author {
+    font-style: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 18px;
+}
+.card_date {
+
+    text-transform: capitalize;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8a8f8f;
+}
