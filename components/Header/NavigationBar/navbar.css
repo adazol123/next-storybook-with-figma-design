@@ -1,0 +1,215 @@
+.navbar-container {
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.035em;
+
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    /* background-color: #323D50; */
+    height: 80px;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+
+}
+.navbar-wrapper {
+    width: 70px;
+    display: flex;
+    /* flex-direction: column; */
+    align-content: center;
+    justify-content: center;
+    padding: 0 8px;
+
+    
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    color: #888888;
+    /*padding: 0px 0;
+    */height: 100%;
+    /*margin: 0 8px;
+    */text-decoration: none;
+    border-bottom: 6px solid;
+    border-color: transparent;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.navbar a:active, a:hover {
+    color:#2DCC9E;
+    border-color: #2DCC9E;
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    -o-transform: scale(1.0);
+}
+
+
+/***********************/
+
+.avatar-wrapper {
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.035em;
+    display: flex;
+    padding-right: 24px;
+
+}
+
+.image {
+    background-color: #323D50;
+    width: 90%;
+    height: 90%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #2DCC9E;
+    object-fit: cover;
+
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    
+    
+}
+
+.avatar-small {
+    cursor: pointer;
+    border: 1.5px solid;
+    border-color: #2DCC9E;
+
+    height: 48px;
+    width: 48px;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    overflow: hidden;
+    
+}
+
+.avatar-medium {
+    height: 78px;
+    width: 78px;
+    font-size: 2em;
+    
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    overflow: hidden;
+}
+
+.avatar-large {
+    height: 108px;
+    width: 108px;
+    font-size: 4em;
+    
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    overflow: hidden;
+}
+.avatar-xlarge {
+    height: 158px;
+    width: 158px;
+    font-size: 4em;
+    
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    overflow: hidden;
+}
+
+/***********************/
+
+
+
+
+.logo-wrapper {
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.035em;
+
+    /* height: 48px; */
+    /* width: 58px; */
+
+    display: flex;
+    padding-left: 24px;
+
+
+}
+
+.logo {
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+
+
+.navigation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.navigation-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    max-width: 1440px;
+    background-color: #323D50;;
+}

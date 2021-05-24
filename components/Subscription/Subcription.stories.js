@@ -4,7 +4,8 @@ import Center from '../Center/Center'
 
 export default {
     title: 'Form/Subscription',
-    decorators: [story => <Center>{story()}</Center>]
+    decorators: [story => <Center>{story()}</Center>],
+
 }
 
 export const PrimarySubcription = () => {

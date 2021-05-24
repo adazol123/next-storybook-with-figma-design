@@ -52,6 +52,7 @@ export default {
   Secondary.args = {
     label: 'Outline',
     primary: false,
+    color:'#2DCC9E',
   };
   
   export const Large = Template.bind({});

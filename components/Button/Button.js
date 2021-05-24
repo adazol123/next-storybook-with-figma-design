@@ -7,8 +7,8 @@ export function Button( { primary, backgroundColor, size, label, color, ...props
             <button 
             type="button"
             className={['storybook_button', `storybook_button__${size}`, mode].join(' ')}
-            style={backgroundColor && { backgroundColor }}
-            style={color && { color }}
+            style={{ backgroundColor }}
+            style={{ color }}
             {...props}
             >{ label }</button>
     )
@@ -30,6 +30,10 @@ Button.propTypes = {
      * What background color to use
      */
     backgroundColor: PropTypes.string,
+        /**
+     * What text color to use in component
+     */
+    color: PropTypes.string,
     /**
      * How large should the button be?
      */
@@ -45,10 +49,12 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-    backgroundColor: null,
+    backgroundColor: '#2DCC9E',
+    color:'#F8F8FF',
     primary: true,
+    label: 'Button',
     size: 'md',
-    onClick: undefined,
+    onClick: 'click',
   };
 
 

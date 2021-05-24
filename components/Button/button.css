@@ -37,6 +37,7 @@
 }
 .storybook_button--secondary {
   color: #2DCC9E;
+  background-color: transparent;
   border: #2DCC9E 2px solid;
   background-color: transparent;
   box-shadow: rgba(78, 75, 75, 0.171) 0px 1px 5px 0px ;
