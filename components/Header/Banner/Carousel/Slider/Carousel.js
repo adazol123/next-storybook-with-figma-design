@@ -25,12 +25,19 @@ export const Carousel = () => {
                        style={{ transform: `translateX(${x}%)`}}
                        >
                            <img src={image.img} alt={image.title} className='carousel-image' />
+                           <div className="carousel-center">
+                               <div className="center-title">
+                                {image.subtitle}
+                               </div>
 
+                            </div>
                        </div>
                    )
                })}
             <button id='goLeft' onClick={goLeft}>Left</button>
+
             <button id='goRight' onClick={goRight}>Right</button>
+
            </div>
 
         </div>
