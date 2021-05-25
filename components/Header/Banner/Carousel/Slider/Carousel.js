@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import {_images, imageData } from './ImageComponent'
+import {_images, imageData, typewriter } from './ImageComponent'
+import Typical from 'react-typical'
 
 export const Carousel = () => {
 
@@ -27,7 +28,12 @@ export const Carousel = () => {
                            <img src={image.img} alt={image.title} className='carousel-image' />
                            <div className="carousel-center">
                                <div className="center-title">
-                                {image.subtitle}
+                                {image.title}
+                                <Typical
+                                    steps={image.typing}
+                                    loop={Infinity}
+                                    wrapper='h1'
+                                />
                                </div>
 
                             </div>
